@@ -73,7 +73,7 @@ class GeoMapInsight extends InsightPluginParent implements InsightPlugin {
 					$geo_insight->instance_id = $instance->id;
 					$geo_insight->slug = $this->slug;
 					$geo_insight->headline = (count($places) > 1) ? "Places today" : "Place today";
-					$geo_insight->text = $place;
+					$geo_insight->text = "Today you have been to " . $place . ".";
 					$geo_insight->date = $date;
 					$geo_insight->emphasis = Insight::EMPHASIS_MED;
 					$geo_insight->filename = $filename;
